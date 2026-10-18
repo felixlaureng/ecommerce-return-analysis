@@ -118,4 +118,4 @@ Detailed setup instructions may be added as needed to reproduce the analysis.
 
 Data Analytics | SQL | Python | Business Intelligence
 
-[LinkedIn]((https://www.linkedin.com/in/felix-ferdinand-laureng/)) · [GitHub](https://github.com/felixlaureng)
+[LinkedIn](https://www.linkedin.com/in/felix-ferdinand-laureng) · [GitHub](https://github.com/felixlaureng)
