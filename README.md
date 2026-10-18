@@ -75,14 +75,23 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configure the Database Connection
-
+This project uses a PostgreSQL database hosted on Neon.
 Create a `.env` file in the project root and configure your Neon PostgreSQL connection string:
 
 ```env
 DATABASE_URL=your_neon_postgresql_connection_string
 ```
+Load the environment variable in Python and connect to the database using psycopg2:
 
-Keep the `.env` file private and ensure it is excluded by `.gitignore`. Never publish database credentials in source code, notebooks, or screenshots.
+import os
+import psycopg2
+from dotenv import load_dotenv
+
+load_dotenv()
+
+conn = psycopg2.connect(os.environ["DATABASE_URL"])
+
+Ensure that .env is included in .gitignore to prevent credentials from being committed to GitHub.
 
 ### 4. Run the Analysis
 
